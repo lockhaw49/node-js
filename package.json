@@ -1,0 +1,19 @@
+{
+  "name": "nodefiles",
+  "version": "1.0.0",
+  "description": "simple web app",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lockhaw49/node-js.git"
+  },
+  "author": "Bill Lockhart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lockhaw49/node-js/issues"
+  },
+  "homepage": "https://github.com/lockhaw49/node-js#readme"
+}
