@@ -1,9 +1,10 @@
 {
   "name": "nodefiles",
-  "version": "1.0.0",
+  "version": "14.16.0",
   "description": "simple web app",
   "main": "hello.js",
-  "scripts": {"start":"node hello.js",
+  "scripts": {
+    "start": "node hello.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/lockhaw49/node-js/issues"
   },
-  "homepage": "https://github.com/lockhaw49/node-js#readme"
+  "homepage": "https://github.com/lockhaw49/node-js#readme",
+  "keywords": [
+    "Web",
+    "App"
+  ]
 }
