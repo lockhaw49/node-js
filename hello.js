@@ -2,11 +2,15 @@ var http = require('http');
 var fs = require('fs');
 var url = require('url');
 const PORT = process.env.PORT || 5000
-http.createServer(function (reg,res){
-	var q = url.parse(reg.url,true);
+http.createServer(function (req,res){
+	var q = url.parse(req.url,true);
 	var filename = "." + q.pathname;
-	if (filename == './') {filename = './index';}
-	console.log(filename);
+	console.log(filename)
+	if (filename == './') {filename = './index.html';}
+	else if (filename.endsWith(".html") == false){
+		filename = filename + ".html"
+	}
+	
 	fs.readFile(filename,function(err, data) {
 		if (err){
 			res.writeHead(404,{'Content-Type':'text/html'});
@@ -19,6 +23,6 @@ http.createServer(function (reg,res){
 		return res.end();
 	 });
 
-}).listen(PORT);
+}).listen(8080);
 
-console.log("Server is listening on port 8080");
+// console.log("Server is listening on port 8080");
